@@ -1,0 +1,6 @@
+@media (max-width: 832px) {
+    .review-tab-container {
+        flex-direction: column;
+    }
+      
+}

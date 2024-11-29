@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="..\css\landingpage.css" />
+    <link rel="stylesheet" href="..\css\code-form.css" />
+    <link rel="stylesheet" href="..\css\contact-media.css" media="screen" />
+    <link rel="stylesheet" href="..\css\log-in.css" />
+    <link rel="stylesheet" href="..\css\hero-media.css" media="screen" />
+    <link rel="stylesheet" href="..\css\review-media.css" media="screen" />
+    <link rel="stylesheet" href="..\css\services-media.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c6026485e1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero">
+      <img src="..\image\hero.jpg" alt="" class="hero-pic" />
+      <header class="header">
+        <nav>
+          <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
+          <div class="logo-container">
+            <img src="..\image\rentwheel-logo-white.png" alt="" />
+          </div>
+          <div class="navbar-menu">
+            <div class="close-navbar"><i class="fa-solid fa-xmark"></i></div>
+
+            <ul>
+              <li onclick="scrollToSection('services')">
+                <svg
+                  class="navbar-menu-icons"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21a8 8 0 0 0 5.656-13.657C16.09 5.777 14 5 11.986 3 9.5 5 9 8 9 10 7 9 6.343 7.343 6.343 7.343A8 8 0 0 0 12 21Z"
+                  ></path>
+                  <path
+                    d="M11.128 16.87A3 3 0 0 1 9 14h2l1.015-3a3 3 0 1 1-.887 5.87Z"
+                  ></path></svg
+                >Services
+              </li>
+              <li onclick="scrollToSection('about')">
+                <svg
+                  class="navbar-menu-icons"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M13 16h-1v-4h-1"></path>
+                  <path d="M12 8h.01"></path>
+                  <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+                </svg>
+                About
+              </li>
+              <li onclick="scrollToSection('review')">
+                <svg
+                  class="navbar-menu-icons"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 8h10M7 12h4m1 8-4-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3l-4 4Z"
+                  ></path></svg
+                >Testimonials
+              </li>
+              <li onclick="scrollToSection('contact')">
+                <svg
+                  class="navbar-menu-icons"
+                  width="1.5rem"
+                  height="1.5rem"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2Z"
+                  ></path>
+                  <path d="m3 8 7.89 5.26a2 2 0 0 0 2.22 0L21 8"></path></svg
+                >Contact
+              </li>
+            </ul>
+          </div>
+          <div class="login-container" onclick="showLogIn()"><p>LOG IN</p></div>
+        </nav>
+      </header>
+    </div>
+    <div class="hero-main-container">
+      <div class="hero-main-text">
+        <h1>Drive with confidence, Rent easily.</h1>
+        <p>
+          Looking to hit the road for your next adventure or business trip? Let
+          us provide the perfect vehicle to make your journey smooth and
+          hassle-free!
+        </p>
+        <div class="hero-get-started-container">
+          <button>RENT NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <section class="services">
+      <div class="services-text">
+        <h1 class="section-title">What We Offer?</h1>
+        <p>
+          Experience hassle-free vehicle rentals tailored to your needs,
+          ensuring every journey is comfortable, reliable, and convenient.
+        </p>
+      </div>
+      <div class="services-main">
+        <div class="services-container">
+          <div class="services-tab services-tab-first">
+            <div class="services-tab-text-container">
+              <h1>01</h1>
+              <hr />
+              <h2>Vehicle Rental</h2>
+              <h3>Choose from a variety of vehicles for your next trip.</h3>
+            </div>
+            <div class="services-tab-image-container">
+              <img src="..\image\services-photo-1.png" alt="" />
+            </div>
+          </div>
+          <div class="services-tab">
+            <div class="services-tab-text-container">
+              <h1>02</h1>
+              <hr />
+              <h2>Rent Out Your Vehicle</h2>
+              <h3>Earn extra by renting out your vehicle with ease</h3>
+            </div>
+            <div class="services-tab-image-container">
+              <img src="..\image\services-photo-2.png" alt="" />
+            </div>
+          </div>
+          <div class="services-tab">
+            <div class="services-tab-text-container">
+              <h1>03</h1>
+              <hr />
+              <h2>Easy Booking</h2>
+              <h3>Book your ride quickly and securely online.</h3>
+            </div>
+            <div class="services-tab-image-container">
+              <img src="..\image\services-photo-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="services-rent-now">START JOURNEY</button>
+      </div>
+
+      <section class="sample">
+        <div class="sample-title-container">
+          <p>Our Featured Vehicle</p>
+          <h1>
+            Experience top-notch comfort and performance with our featured
+            vehicle.
+          </h1>
+        </div>
+        <div class="sample-main-container">
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-1.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">VoltRider Pro</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-5.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">Thunderbolt 500</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-2.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">Aurora X5</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-4.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">TrailBlazer 300</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-3.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">Elegance S4</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+
+          <div class="sample-tab">
+            <div class="sample-photo">
+              <img src="..\image\sample-6.png" alt="" />
+            </div>
+            <div class="sample-name-container">
+              <div class="sample-name">VivaMotion Z</div>
+              <div class="rate-and-sold">
+                <img src="..\image\star-rate-image.png" alt="" />
+                <p>4.5 | 125 rented</p>
+              </div>
+            </div>
+            <div class="sample-preview">
+              <div class="sample-class preview">
+                <i class="fa-solid fa-car"></i>
+                <p>Sedan</p>
+              </div>
+              <div class="sample-location preview">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Taguig</p>
+              </div>
+              <div class="sample-seats preview">
+                <i class="fa-solid fa-user-group"></i>
+                <p>4 seats</p>
+              </div>
+              <div class="sample-fuel preview">
+                <i class="fa-solid fa-gas-pump"></i>
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="sample-buttons">
+              <button>Book</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="best-services">
+        <!-- <div class="best-services-car">
+          <img src="..\image\best-services-photo-1.png" alt="" />
+        </div> -->
+        <div class="best-services-text-container">
+          <!-- <div class="best-services-text-main"> -->
+          <div class="best-services-title-container">
+            <p>Best Services</p>
+            <h1>Feels the best experience with our rental deals</h1>
+          </div>
+          <div class="best-services-content-container">
+            <div class="best-services-content-main">
+              <div class="best-services-logo">
+                <div><i class="fa-solid fa-envelope"></i></div>
+              </div>
+              <div>
+                <h1>Support 24/7</h1>
+                <p>
+                  Our dedicated team is available around the clock to provide
+                  assistance and ensure your experience is seamless and
+                  worry-free
+                </p>
+              </div>
+            </div>
+            <div class="best-services-content-main">
+              <div class="best-services-logo">
+                <div><i class="fa-solid fa-tags"></i></div>
+              </div>
+              <div>
+                <h1>Deals for every budget</h1>
+                <p>
+                  No matter your budget, we offer a range of affordable deals
+                  that make renting a vehicle convenient and accessible for
+                  everyone
+                </p>
+              </div>
+            </div>
+            <div class="best-services-content-main">
+              <div class="best-services-logo">
+                <div><i class="fa-solid fa-car-side"></i></div>
+              </div>
+              <div>
+                <h1>Great choices of vehicle</h1>
+                <p>
+                  From compact cars to spacious vehicles, our diverse fleet has
+                  the perfect vehicle to match your needs and elevate your
+                  journey
+                </p>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAMPLE PRODUCTS -->
+
+    <!-- ABOUT -->
+
+    <section class="about">
+      <div class="about-container">
+        <div class="about-title-container">
+          <h1 class="section-title">What Drives Us</h1>
+          <p>
+            Get to know us and how we make renting a ride easy, affordable, and
+            hassle-free for every trip.
+          </p>
+        </div>
+
+        <div class="about-main-container">
+          <div class="about-image-container">
+            <!-- <img src="..\image\about-photo-1.jpg" alt="" /> -->
+            <div class="about-main">
+              <div>
+                <i class="fa-solid fa-users"></i>
+                <p>
+                  We’re more than just a vehicle rental service—we’re your
+                  trusted partner on the road. Built on a passion for providing
+                  convenience and reliability, we’re here to help you explore,
+                  accomplish, and create memories without limits.
+                </p>
+              </div>
+              <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <p>
+                  What began as a small idea has grown into a thriving service,
+                  connecting countless customers with the perfect vehicles for
+                  their needs. Our commitment to quality, and customer
+                  satisfaction has driven our success every step of the way.
+                </p>
+              </div>
+              <div>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>
+                  Your journey is our priority. We’re dedicated to ensuring that
+                  every ride is smooth, every trip is memorable, and every
+                  customer is part of our growing family. With us, you’re not
+                  just renting a vehicle—you’re moving forward with confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="review">
+      <div class="review-container">
+        <div class="review-title-container">
+          <h1 class="section-title">Client Feedback</h1>
+          <p>
+            Discover what our satisfied customers have to say about their
+            experiences with our services and how we've made a difference in
+            their lives.
+          </p>
+        </div>
+        <div class="review-main-container">
+          <div class="review-tab-container">
+            <div class="review-tab">
+              <h1>Sarah L. <span>| Dec. 18, 2023</span></h1>
+              <p>
+                "I had an amazing experience renting a vehicle from this
+                service! The booking process was simple, and the car I received
+                was in perfect condition. It made my trip so much more
+                enjoyable, and I’ll definitely be using them again for my future
+                travels!"
+              </p>
+              <div class="review-profile-div">
+                <img src="..\image\female-review.jpg" alt="" />
+              </div>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="review-tab">
+              <h1>Mark D. <span>| Feb. 21, 2024</span></h1>
+              <p>
+                "Renting a vehicle was a breeze with this service. The staff was
+                friendly, and the car was exactly what I needed for my weekend
+                getaway. It was affordable, reliable, and comfortable –
+                everything you want in a rental!"
+              </p>
+              <div class="review-profile-div">
+                <img src="..\image\male-review.jpg" alt="" />
+              </div>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-message-container">
+          <div class="input-row">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea rows="4" cols="50" placeholder="Message"></textarea>
+          <button>SEND</button>
+        </div>
+
+        <div class="contact-info-container">
+          <p>Contact Us</p>
+          <h1>Get In <span>Touch</span></h1>
+          <h3>
+            Need help? Our support team is here to assist you for any inquiries
+            you may have.
+          </h3>
+          <div class="contact-info-main-container">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <div class="contact-title">Phone Number</div>
+                  <div class="contact-detail">+639948415027</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <div class="contact-title">Email</div>
+                  <div class="contact-detail email-detail">
+                    rentwheelrentalvehicle@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-facebook-f"></i>
+                <div>
+                  <div class="contact-title">Facebook</div>
+                  <div class="contact-detail">Rent Wheel</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-house"></i>
+                <div>
+                  <div class="contact-title">Address</div>
+                  <div class="contact-detail">Lower Bicutan, Taguig City</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="log-in">
+      <form class="form">
+        <div class="log-in-title">
+          <i class="fa-solid fa-xmark close-LogIn" onclick="closeLogIn()"></i>
+          <h1>Log In</h1>
+        </div>
+        <div class="flex-column">
+          <label>Email </label>
+        </div>
+        <div class="inputForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="0 0 32 32"
+            height="20"
+          >
+            <g data-name="Layer 3" id="Layer_3">
+              <path
+                d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"
+              ></path>
+            </g>
+          </svg>
+          <input placeholder="Enter your Email" class="input" type="text" />
+        </div>
+
+        <div class="flex-column">
+          <label>Password </label>
+        </div>
+        <div class="inputForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="-64 0 512 512"
+            height="20"
+          >
+            <path
+              d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"
+            ></path>
+            <path
+              d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"
+            ></path>
+          </svg>
+          <input
+            placeholder="Enter your Password"
+            class="input"
+            type="password"
+          />
+        </div>
+
+        <div class="flex-row">
+          <div>
+            <input type="radio" />
+            <label>Remember me </label>
+          </div>
+          <span class="span">Forgot password?</span>
+        </div>
+        <button class="button-submit">Sign In</button>
+        <p class="p">
+          Don't have an account?
+          <span class="span sign-up-button" onclick="showSignUp()"
+            >Sign Up</span
+          >
+        </p>
+        <p class="p line">Or With</p>
+
+        <div class="flex-row">
+          <button class="btn google">
+            <svg
+              xml:space="preserve"
+              style="enable-background: new 0 0 512 512"
+              viewBox="0 0 512 512"
+              y="0px"
+              x="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              width="20"
+              version="1.1"
+            >
+              <path
+                d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+	C103.821,274.792,107.225,292.797,113.47,309.408z"
+                style="fill: #fbbb00"
+              ></path>
+              <path
+                d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+	c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                style="fill: #518ef8"
+              ></path>
+              <path
+                d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+	c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                style="fill: #28b446"
+              ></path>
+              <path
+                d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+	C318.115,0,375.068,22.126,419.404,58.936z"
+                style="fill: #f14336"
+              ></path>
+            </svg>
+
+            Google
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="log-in sign-up">
+      <form class="form">
+        <div class="log-in-title sign-up-title">
+          <i
+            class="fa-solid fa-xmark close-LogIn close-SignUp"
+            onclick="closeSignUp()"
+          ></i>
+          <h1>Sign Up</h1>
+        </div>
+        <div class="flex-column">
+          <label>Email </label>
+        </div>
+        <div class="inputForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="0 0 32 32"
+            height="20"
+          >
+            <g data-name="Layer 3" id="Layer_3">
+              <path
+                d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"
+              ></path>
+            </g>
+          </svg>
+          <input placeholder="Enter your Email" class="input" type="text" />
+        </div>
+
+        <div class="flex-column">
+          <label>Password </label>
+        </div>
+        <div class="inputForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="-64 0 512 512"
+            height="20"
+          >
+            <path
+              d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"
+            ></path>
+            <path
+              d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"
+            ></path>
+          </svg>
+          <input
+            placeholder="Enter your Password"
+            class="input"
+            type="password"
+          />
+        </div>
+        <div class="inputForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            viewBox="-64 0 512 512"
+            height="20"
+          >
+            <path
+              d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"
+            ></path>
+            <path
+              d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"
+            ></path>
+          </svg>
+          <input
+            placeholder="Re-enter your Password"
+            class="input"
+            type="password"
+          />
+        </div>
+        <button class="button-submit sign-up-submit" onclick="showCodeForm()">
+          Sign Up
+        </button>
+        <p class="p">
+          Already have an account?
+          <span class="span" onclick="showLogIn()">Sign In</span>
+        </p>
+        <p class="p line">Or With</p>
+
+        <div class="flex-row">
+          <button class="btn google">
+            <svg
+              xml:space="preserve"
+              style="enable-background: new 0 0 512 512"
+              viewBox="0 0 512 512"
+              y="0px"
+              x="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              width="20"
+              version="1.1"
+            >
+              <path
+                d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+	C103.821,274.792,107.225,292.797,113.47,309.408z"
+                style="fill: #fbbb00"
+              ></path>
+              <path
+                d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+	c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                style="fill: #518ef8"
+              ></path>
+              <path
+                d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+	c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                style="fill: #28b446"
+              ></path>
+              <path
+                d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+	C318.115,0,375.068,22.126,419.404,58.936z"
+                style="fill: #f14336"
+              ></path>
+            </svg>
+
+            Google
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="code-form-container">
+      <form class="code-form">
+        <i class="fa-solid fa-xmark close-LogIn close-code-form" onclick="closeCodeForm()"></i>
+
+        <div class="info">
+          <span class="title">Two-Factor Verification</span>
+          <p class="description">
+            To verify, enter the code sent to your email address.
+          </p>
+        </div>
+        <div class="code-form-input-fields">
+          <input placeholder="" type="tel" maxlength="1" />
+          <input placeholder="" type="tel" maxlength="1" />
+          <input placeholder="" type="tel" maxlength="1" />
+          <input placeholder="" type="tel" maxlength="1" />
+        </div>
+
+        <div class="action-btns">
+          <a class="verify" href="#">Verify</a>
+          <a class="clear" href="#">Clear</a>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      Copyright 2024 <br />
+      Wala lang
+    </footer>
+  </body>
+
+  <script src="..\javsacript\landingpage.js"></script>
+</html>
